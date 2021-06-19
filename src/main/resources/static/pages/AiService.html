@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>客服聊天</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="./answerQuestionCss/AiService.css">
+    <script src="../plugins/jQuery/jquery-1.12.4.min.js"></script>
+    <script src="../plugins/cookie/jquery.cookie.js"></script>
+    <script src="answerQuestionJs/AiService.js"></script>
+</head>
+<body>
+<div class="dialogue-wrapper">
+    <div id="btn_open" class="dialogue-support-btn">
+        <i class="dialogue-support-icon"></i>
+        <i class="dialogue-support-line"></i>
+        <span class="dialogue-support-text">联系客服</span>
+    </div>
+    <div class="dialogue-main">
+        <div class="dialogue-header">
+            <i id="btn_close" class="dialogue-close">></i>
+            <div class="dialogue-service-info">
+                <i class="dialogue-service-img">头像</i>
+                <div class="dialogue-service-title">
+                    <p class="dialogue-service-name">客服小E</p>
+                    <p class="dialogue-service-detail">砺英网服务平台</p>
+                </div>
+            </div>
+        </div>
+        <div id="dialogue_contain" class="dialogue-contain">
+            <p class="dialogue-service-contain"><span class="dialogue-text dialogue-service-text">您好，请提问</span></p>
+            <!-- <p class="dialogue-customer-contain"><span class="dialogue-text dialogue-customer-text">我有个问题</span></p> -->
+        </div>
+        <div class="dialogue-submit">
+            <p id="dialogue_hint" class="dialogue-hint"><span class="dialogue-hint-icon">!</span><span class="dialogue-hint-text">发送内容不能为空</span></p>
+            <textarea id="dialogue_input" class="dialogue-input-text" placeholder="请输入您的问题，按Enter键提交（shift+Enter换行）"></textarea>
+            <div class="dialogue-input-tools">
+                小工具预留位置
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
